@@ -1,0 +1,24 @@
+body, html, .personalOpinion {
+	background: #F0F0F0 !important;
+	margin: 0 auto;
+	height: 100%
+}
+
+.personalOpinion .header-bg {
+	background-color: #5FDEC9;
+	color: #fff;
+}
+
+.personalOpinion .header-bg .title {
+	color: #fff;
+}
+
+.personalOpinion .opinion h5 {
+	color: #818181;
+	padding: 14px 20px;
+}
+
+.personalOpinion .opinion-list a {
+	font-size: 12px;
+	color: #101010
+}

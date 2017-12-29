@@ -1,0 +1,143 @@
+body, html {
+	height: 100%;
+	margin: 0 auto;
+
+}
+.searchGoods .icon-left > i {
+	color: #fff
+}
+/*顶级导航栏*/
+.searchGoods .class-nav ul.nav-head, .searchGoods .class-nav ul.nav-vice {
+	text-align: center;
+}
+.searchGoods .class-nav ul.nav-head li span {
+	position: relative;
+}
+.searchGoods .class-nav ul.nav-head li span i.up {
+	position: absolute;
+	top: 3px;
+    right: -10px;
+}
+.searchGoods .class-nav ul.nav-head li span i.down {
+	position: absolute;
+	bottom: 0;
+    right: -10px;
+}
+/*副级导航栏*/
+.searchGoods .class-nav ul.nav-vice{
+	padding: 10px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.searchGoods .class-nav ul.nav-vice li{
+    border: 1px solid #ccc;
+    padding: 0;
+    height: 20px;
+    line-height: 18px;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+/*搜索商品*/
+.searchGoods .searchGoods-goods ul {
+	padding: 0;
+}
+.searchGoods .searchGoods-goods ul li {
+	width: 100%;
+	border-top: 1px solid #f4f4f4;
+	padding: 10px 0;
+}
+.searchGoods .searchGoods-goods ul li a {
+	color: #0e0e0e;
+}
+.searchGoods .searchGoods-goods .goods-img {
+
+}
+.searchGoods .searchGoods-goods .goods-desc {
+	margin-left: 10px;
+}
+.searchGoods .searchGoods-goods .goods-desc .goods-title {
+	font-size: 14px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:1;
+	margin-bottom: 12px;
+}
+.searchGoods .goods-desc .goods-eval {
+	color: #404040;
+	margin-bottom: 5px;
+}
+.searchGoods .goods-desc .goods-eval span {
+	margin-right: 14px;
+}
+.searchGoods .goods-desc .goods-price{
+	color: #f23030;
+}
+.searchGoods .goods-desc .goods-price i {
+	color: #5FDEC9
+}
+
+/*推荐  分类*/
+.searchGoods .recommend {
+	width: 100%;
+	background-color: #f0f2f5;
+}
+.searchGoods .recommend ul li {
+	text-align: center;
+    background: #fff;
+    margin: 6px 10px;
+    padding: 0;
+    border-radius: 20px;
+    border: 1px solid #e9e9e9;
+}
+
+/*朦层*/
+.searchGoods .layer-bg-top {
+	height: 100%;
+	position: absolute;
+	z-index: 99;
+	background: rgba(227, 227, 227, 0.50);
+	width: 100%;
+	top: 36px;
+	left: 0;
+	display: none;
+	animation-name: mymove;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-delay: 1s;
+	animation-fill-mode:forwards;
+	animation-direction: normal;
+	animation-iteration-count: 1;
+}
+.searchGoods .layer-bg-top .integrative-list {
+	background: #fff;	
+}
+@keyframes mymove{
+    from {top:36px;}
+    to {top:77px;}
+}
+
+.searchGoods .layer-bg-right {
+	height: 100%;
+	position: absolute;
+	z-index: 999;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+.bg-right-empty {
+	height: 100%;
+	position: absolute;
+	width: 20%;
+	background: #000;
+}
+.right-integrative-list {
+	height: 100%;
+	position: absolute;
+	background: #fff;
+	width: 80%;
+	top: 0;
+	left: 20%;
+}

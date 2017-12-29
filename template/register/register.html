@@ -1,0 +1,62 @@
+<ion-view view-title="手机快速注册">
+	<div class="register">
+		
+		<!-- 头部内容 -->
+	    <ion-header-bar class="bar bar-header header-bg ">
+	        <div class="item-icon-left icon-left">
+	            <i class="icon ion-ios-arrow-back" ng-click="loading()"></i>
+	        </div>
+	        <div class="h1 title">手机快速注册</div>
+	    </ion-header-bar>
+	    
+		<div class="scroll-content has-header bor-top">
+			<div class="register-main">
+				<form>
+					<ion-list class="list">
+						<label class="item item-input">
+							<i class="icon ion-ios-person"></i>
+							<input type="text" name="username" placeholder="请输入您的用户名">
+						</label>
+						
+						<label class="item item-input">
+							<i class="icon ion-ios-locked"></i>
+							<input type="password" name="password" placeholder="请输入密码">
+							<!-- ion-ios-eye 可看 -->
+							<i class="icon ion-ios-eye-outline icons-right"></i>
+						</label>
+
+						<label class="item item-input">
+							<i class="icon ion-ios-locked"></i>
+							<input type="password" name="confirmPassword" placeholder="请再次输入密码">
+							<!-- ion-ios-eye 可看 -->
+							<i class="icon ion-ios-eye-outline icons-right"></i>
+						</label>
+
+						<label class="item item-input">
+							<i class="icon ion-ios-telephone"></i>
+							<input type="number" name="cellphone" placeholder="请输入手机号码">
+						</label>
+
+						<label class="item item-input">
+							<i class="icon ion-ios-email"></i>
+							<input type="number" name="validate" placeholder="请输入短信验证码">
+							<span class="getEmail">获取验证码</span>
+						</label>
+
+						<div class="register-agree">
+							<ion-checkbox>同意博菲特用户注册协议、用户隐私政策</ion-checkbox>
+						</div>
+
+						<div class="register-but">
+							<button class="button button-settlement button-block">注册</button>
+						</div>
+						<div class="service"><p>遇到问题？您可以 <a>联系客服</a></p></div>
+
+					</ion-list>
+				</form>
+
+			</div>
+		</div>	
+
+	</div>
+</ion-view>

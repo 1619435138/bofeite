@@ -1,0 +1,70 @@
+<ion-view view-title="个人中心">
+    <div class="personal">
+        <!-- 头部内容 -->
+        <app-header></app-header>
+        <ion-content class="margin-top">
+            <ion-list class="personal-label clearfix block">
+                <div class="label">
+                    <div>
+                        <img class="full-image" src="./public/images/icons/personal-label.png">
+                    </div>
+                    <h5>猴来野</h5>
+                </div>
+                <div class="label-icon">
+                    <ion-item class="tab-item">
+                        <i class="icon ion-social-usd-outline"></i>
+                        <span>待付款</span>
+                    </ion-item>
+                    <ion-item class="tab-item">
+                        <i class="icon ion-card"></i>
+                        <span>待收货</span>
+                    </ion-item>
+                    <ion-item class="tab-item">
+                        <i class="icon ion-android-star-half"></i>
+                        <span>待评价</span>
+                    </ion-item>
+                    <ion-item class="tab-item">
+                        <i class="icon ion-social-whatsapp-outline"></i>
+                        <span>退货/售后</span>
+                    </ion-item>
+                </div>
+            </ion-list>
+            <ion-list class="clearfix bor-top block label-list">
+                <ion-item class="item-icon-left item-icon-right" ui-sref="app.order">
+                    <i class="icon ion-ios-list-outline"></i>
+                    <span>我的订单</span>
+                    <i class="icon ion-ios-arrow-forward"></i>
+                </ion-item>
+                <ion-item class=" item-icon-left item-icon-right" ui-sref="app.personalDelivery">
+                    <i class="icon ion-ios-navigate-outline"></i>
+                    <span>地址管理</span>
+                    <i class="icon ion-ios-arrow-forward"></i>
+                </ion-item>
+                <ion-item class=" item-icon-left item-icon-right">
+                    <i class="icon ion-ios-star-outline"></i>
+                    <span>我的收藏</span>
+                    <i class="icon ion-ios-arrow-forward"></i>
+                </ion-item>
+                <ion-item class=" item-icon-left item-icon-right">
+                    <i class="icon ion-ios-flag-outline"></i>
+                    <span>活动中心</span>
+                    <i class="icon ion-ios-arrow-forward"></i>
+                </ion-item>
+                <ion-item class=" item-icon-left item-icon-right">
+                    <i class="icon ion-ios-email-outline"></i>
+                    <span>邀请有礼</span>
+                    <i class="icon ion-ios-arrow-forward"></i>
+                </ion-item>
+                <ion-item class=" item-icon-left item-icon-right" ui-sref="app.personalOpinion">
+                    <i class="icon ion-ios-compose-outline"></i>
+                    <span>意见反馈</span>
+                    <i class="icon ion-ios-arrow-forward"></i>
+                </ion-item>
+            </ion-list>
+            <div class="height-but"></div>
+        </ion-content>
+        <!-- 尾部内容 -->
+        <app-footer ></app-footer>
+        
+    </div>
+</ion-view>

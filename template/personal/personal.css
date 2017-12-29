@@ -1,0 +1,59 @@
+body, html, .personal {
+	background: #fff;
+	margin: 0 auto;
+	font-family: "黑体";
+}
+
+.personal .header-bg {
+	background-color: #5FDEC9;
+	color: #fff;
+}
+
+.personal .header-bg .title {
+	color: #fff;
+}
+
+.personal .personal-label {
+	background: url('../../public/images/icons/personal-bg.png') no-repeat 0 0;
+	background-size: 100% 100%;
+    display: block;
+}
+
+.personal .personal-label div.label  {
+	width: 90px;
+	margin: 40px auto 20px;
+}
+
+.personal div.label h5 {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.personal .label-icon {
+	background-color: rgba(173, 113, 199, 0.50);
+	overflow: hidden;
+	padding: 10px 0 5px;
+}
+
+.personal .label-icon .item {
+	float: left;
+	color: #fff;
+	background-color: initial;
+	padding: 0;
+	width: 25%;
+	border: none;
+}
+
+.personal .label-icon .item > i {
+	margin-top: 5px;
+}
+
+.personal .label-icon span {
+	display: block;
+	font-size: small;
+	/*margin-top: 10px;*/
+}
+
+.personal .label-list .ion-ios-arrow-forward {
+	color: #D7D3D2
+}

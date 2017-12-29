@@ -1,0 +1,48 @@
+<ion-header-bar class="bar bar-header header-bg" ng-if="Header">
+    
+    <!-- 左边 -->
+    	<div class="item-icon-left icon-left" ng-if="Left">
+    		<!-- 二维码 -->
+    		<i class="icon ion-qr-scanner" ng-if="QrCode"></i>
+    		<!-- 左箭头 -->
+    		<i ng-click="returnTO()" class="icon ion-ios-arrow-back" ng-if="LeftArrow"></i>
+    	</div>
+    
+    <!-- 中间元素 -->
+	    <!-- 搜索 -->
+		    <div class="item-input-inset search" ng-if="Search">
+		        <label class="item-input-wrapper input-bg">
+		            <input ui-sref="app.search" type="search" ng-model="searchName" placeholder="搜索您喜欢的商品">
+		            <!-- <i class="icon ion-android-search placeholder-icon"></i> -->
+		        </label>
+
+		    </div>
+	    <!-- 标题文本 -->
+	    	<div class="h1 title" ng-if="title">{{titleTXT}}</div>
+
+    <!-- 右边-->
+		<div class="item-icon-right icon-right" ng-if="Right">
+			<!-- 消息 -->
+			<i class="icon ion-chatbubbles" ng-if="News" ui-sref="app.personalPlatform"></i>
+			<i class="icon ion-ios-search-strong right-l" ng-if="SearchIcon" ui-sref="app.search"></i>
+			<!-- 刷新 分享 -->
+			<i class="icon ion-ios-reload right-l" ng-if="Refresh"></i>
+	       	<i class="icon ion-android-share-alt right-r" ng-if="Share"></i>
+	       	<!-- 设置 -->
+	       	<i class="icon ion-ios-gear-outline" ng-if="SetUp" ui-sref="app.personalData"></i>
+	       	<span class="icon search-txt" ng-click="toSearch(searchName)" ng-if="searchTxt">搜索</span>
+		</div>
+    	
+</ion-header-bar>
+<style type="text/css">
+	.right-l {
+		right: 50px !important;
+	}
+	.title {
+		color: #fff;
+	}
+	span.search-txt{
+		font-size: 18px !important;
+    	color: #fff !important;
+	}
+</style>

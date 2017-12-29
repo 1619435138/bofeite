@@ -1,0 +1,52 @@
+body, html, .orderDetails {
+	height: 100%;
+	margin: 0 auto;
+	background: #fff;
+}
+
+.orderDetails .header-bg {
+	color: #fff !important;
+	background-color: #5FDEC9;
+}
+
+.orderDetails .header-bg .title {
+	color: #fff;
+}
+
+.orderDetails .item, .orderDetails .item h2, .orderDetails .item p {
+	white-space: inherit;
+	font-size: 12px;
+}
+
+.orderDetails .item div {
+	color: #0e0e0e;
+	font-size: 12px;
+}
+
+.orderDetails .item span.red-color {
+	color: #f00;
+}
+
+.orderDetails .item .no-price {
+	text-decoration: line-through;
+}
+
+.orderDetails .item span.border-style {
+	border: 1px solid #ccc;
+	padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.orderDetails .item-paddind-top {
+	padding-top: 16px;
+}
+
+.orderDetails .item-padding {
+	padding: 8px 16px;
+}
+
+.orderDetails .div-right{
+	position: absolute;
+    right: 16px;
+	top: 13px;
+}

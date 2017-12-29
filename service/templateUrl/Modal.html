@@ -1,0 +1,96 @@
+<style type="text/css">
+	
+	.modal{
+		top:-50px;
+	}
+	.modal-rgba {
+		background-color: rgba(233, 232, 232, 0.50);
+	}
+	.modal-bg {
+		
+		width:calc(100% - 60px);
+		height: 240px; 
+	}
+	.show-modal {
+		height: calc(100% - 60px);
+		overflow: initial !important;
+		z-index: 9999 !important;
+		top: 240px !important;
+		background-color: #fff !important;
+	}
+	.show-modal .scroll {
+		height: calc(100% - 60px - 120px);
+	}
+	.show-modal .item {
+		overflow: initial !important;
+		margin-right: 0px;
+		border: none;
+		border-bottom: 1px solid #ddd;
+	}
+
+	.show-modal .item-thumbnail-left>img:first-child {
+		top: -20px;
+		border-radius: 4px;
+	}
+
+	.show-modal a {
+		text-align: left;
+		display: block;
+		color: #0D0D0D;
+	}
+
+	.show-modal a > span {
+		
+		display: block;
+		font-size: 12px;
+		overflow: hidden;
+
+	}
+
+	.show-modal a.active  {
+		background-color: #4EE1C7;
+	    border-radius: 6px;
+	    padding: 2px 6px;
+	    color: #fff;
+		display: inline-block;
+	}
+
+	.show-modal .item-thumbnail-left h2 {
+		color: #FB0303;
+	}
+
+	.show-modal .isTrue {
+		position: absolute;
+		bottom: 0px;
+		width: 100%
+	}
+
+	.show-modal .isTrue > button{
+		background-color: #3BC5AE
+	}
+
+</style>
+<ion-modal-view class="modal-rgba">
+	<div class="modal-bg" ng-click="hideModal()"></div>
+	<ion-content class="show-modal">
+			<ion-list>
+				<ion-item class="item-thumbnail-left">
+					<img src="./public/images/product/product-01.png">
+					<h2>￥399.00</h2>
+					<p>库存352件</p>
+					<p>已选:[经典款] 黑色  动感飞轮</p>
+				</ion-item>
+				<ion-item class="color">
+					<h3>颜色分类</h3>
+					<a><span>白色 [健身房加强款] 加强轴承  管壁加厚  终身质保</span></a>
+					<a><span>黑色 [健身房加强款] 加强轴承  管壁加厚  终身质保</span></a>
+					<a><span>[经典款] 白色  动感飞轮</span></a>
+					<a class="active"><span>白色 [健身房加强款] </span></a>
+				</ion-item>
+            </ion-list>
+            <div class="isTrue">
+            	<button class="button button-balanced button-block" ng-click="hideModal()">确定</button>
+            </div>
+	</ion-content>
+
+</ion-modal-view>

@@ -1,0 +1,38 @@
+body, html, .registerSuccess {
+	height: 100%;
+	margin: 0 auto;
+	background: #EEEEEE;
+}
+
+.registerSuccess .header-bg {
+	color: #fff !important;
+	background-color: #5FDEC9;
+}
+
+.registerSuccess .header-bg .title {
+	color: #fff;
+}
+
+
+.registerSuccess .success-main {
+	padding: 0 8%;
+	margin-top: 30px;
+}
+
+.registerSuccess .success-main p {
+	color: #060606;
+	margin-top: 10px;
+}
+
+.registerSuccess .success-main p span{
+    padding: 0px 10px;
+    background: #5FDEC9;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.registerSuccess .success-img img{
+	width: 200px;
+    margin: 0 auto;
+    margin-top: 120px;
+}

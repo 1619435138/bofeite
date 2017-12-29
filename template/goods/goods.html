@@ -1,0 +1,49 @@
+<style type="text/css">
+.goods-title {
+    display:flex;width:100%;
+}
+.tab_default{ 
+    flex:1;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 8px;
+    color: #fff;
+}
+.tab_select{
+    border-bottom:solid 1px #3E89F5;
+    border-bottom: solid 3px #ffffff;
+    
+    
+}
+.icon-left, .icon-right {
+    color: #fff;
+}
+
+</style>
+<ion-view view-title=""> 
+    
+        <ion-header-bar class="bar bar-header header-bg">
+            <div class="goods-title">
+                <div class="item-icon-left icon-left">
+                    <i ng-click="returnTO()" class="icon ion-ios-arrow-back"></i>
+                </div>
+                <div style="" class="tab_default" ng-repeat="tabNames in tabNames track by $index" ng-click="activeSlide($index)" ng-class="slectIndex==$index ? 'tab_select' : '' ">
+                    {{tabNames}}
+                    <div class="arrow-top" style="left:{{15+$index*33.3333}}%" ng-show="slectIndex==$index"></div>
+                </div>
+                <div class="item-icon-right icon-right">
+                   <i class="icon ion-ios-chatbubble-outline"></i>
+                </div>
+            </div>
+        </ion-header-bar>
+
+        <ion-slide-box on-slide-changed="slideChanged(index)" active-slide="slideIndex" does-continue="false" show-pager="false">
+            <ion-slide ng-repeat="page in goodsPages track by $index">
+
+                <div ng-include="page.htmlUrl" class="{{page.className}}" ng-title="{{page.title}}"></div>
+
+            </ion-slide>
+        </ion-slide-box>
+
+    
+</ion-view>

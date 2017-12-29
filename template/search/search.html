@@ -1,0 +1,39 @@
+
+    <div class="search header-common">
+        <!-- 头部内容 -->
+        <app-header></app-header>
+
+        <!-- 中心内容 -->
+        <ion-content class="main bor-top margin-top">
+            <!-- 历史搜索 -->
+            <div class="annals">
+                <div class="item-icon-left item-icon-right history" href="#">
+                    <h4>历史搜素</h4>
+                    <div class="i-right" ng-click="deleteConfirm()"><i class="icon ion-trash-a"></i></div>
+                </div>
+                <div class="list-history">
+                    <ul class="list">
+                        <li class="" ng-click="goSearch(item)" ng-repeat="item in history track by $index"><a>{{item.name}}</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 商品发现 -->
+            <div class="find">
+                <div class="item-icon-left item-icon-right goods" href="#">
+                    <h4>商品发现</h4>
+                    <div class="i-right" ng-click="hideFind()"><i class="icon {{isFind ? 'ion-eye' : 'ion-eye-disabled'}}"></i></div>
+                </div>
+                <div class="list-history" ng-show="isFind">
+                    <ul class="list">
+                        <li class="" ng-click="goSearch(item)" ng-repeat="item in find track by $index"><a>{{item.name}}</a></li>
+                    </ul>
+                </div>
+            </div>
+           
+        </ion-content>
+
+        <!-- 尾部内容 -->
+        <app-footer ></app-footer>
+
+    </div>

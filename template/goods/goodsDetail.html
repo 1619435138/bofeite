@@ -1,0 +1,72 @@
+<ion-view>
+	<!-- 商品详情 -->
+	<ion-content class="bor-top">
+
+	    <!-- 轮播 -->
+	    <div  class="banner bor-bot">
+	        <ion-slide-box does-continue="{{banner.doesContinue}}" auto-play="banner.autoPlay" slide-interval="{{banner.slideInterval}}" show-pager="{{banner.showPager}}" on-slide-changed="">
+	            <ion-slide ng-repeat="banner in goodsBanner track by $index">
+	                <div class="box"><img ng-src="{{banner.imgUrl}}"></div>
+	            </ion-slide>
+	            
+	        </ion-slide-box>
+	    </div>
+
+	    <!-- 详情 -->
+	    <div class="detail">
+
+	        <ul class="list">
+	            <li class="item item-icon-right list-title">
+	                <div>BFT-A520T高清大屏安卓智能跑步机健身房商用WiFi多功能商用跑步机</div>
+	                <i class=""></i>
+	            </li>
+	            <li class="item list-desc">
+	                <div>【10月狂欢秒杀】直降底价，买就送688元大礼包！6仓齐发！送到家安装！</div>
+	                <div class="money">&yen;2599.00 <span class="fr">降价通知</span></div>
+	             </li>
+	            <li class="item list-pledge">
+	                <i class="icon ion-ios-checkmark-outline"></i><span>分期购</span>
+	                <i class="icon ion-ios-checkmark-outline"></i><span>正品保证</span>
+	                <i class="icon ion-ios-checkmark-outline"></i><span>极速退款</span>
+	                <div class="item-icon-right icon-right">
+	                    <i class="icon ion-ios-more"></i>
+	                </div>
+	            </li>    
+	            <li class="item list-select">
+	                <span class="fl">已选</span>
+	                <p>10.1寸彩屏多功能，1件，增值服务</p>
+	                <div class="item-icon-right icon-right">
+	                    <i class="icon ion-ios-more"></i>
+	                </div>
+	             </li> 
+	             <li class="item list-select">
+	                <span class="fl">送至</span>
+	                <em><i class="icon ion-ios-location"></i><a>现货</a></em>
+	                <p>广东 > 广州市 > 白云区</p>
+	                <div class="item-icon-right icon-right">
+	                    <i class="icon ion-ios-more"></i>
+	                </div>
+	             </li> 
+	             <li class="item list-select">
+	                <span class="fl">运费</span>
+	                <p>在线支付免运费</p>
+	                <div class="item-icon-right icon-right">
+	                    <i class="icon ion-ios-more"></i>
+	                </div>
+	             </li>                
+	        </ul>
+
+	    </div>
+	    
+	    <div class="height-but"></div>
+
+	</ion-content>
+
+	<footer class="bar bar-footer footer-bg">
+		<div class="bg-buy padding-vertical">
+		    <a class="shopping fl">加入购物车</a>
+		    <a class="buying fl">立即购买</a>
+		</div>
+	</footer>
+
+</ion-view>

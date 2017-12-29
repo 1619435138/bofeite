@@ -1,0 +1,65 @@
+<ion-view view-title="我的订单 之 确认订单">
+	<div class="orderDetails">
+	
+		<!-- 头部内容 -->
+        <app-header></app-header>
+	    
+		<ion-content class="bor-top margin-top">
+			<ion-list>
+				<ion-item class="item-icon-left item-icon-right item-paddind-top">
+					<div>
+						<span class="red-color">张三</span>
+						<span class="fr red-color">137********</span>
+					</div>
+					<div>
+						<i class="icon ion-ios-location"></i>
+				   		<div>广东省广州市海珠江燕路南珠广场附近（江南大道南海鹰路88号） </div>
+				    	<i class="icon ion-ios-arrow-right"></i>
+					</div>
+					<p class="green-color">(收货不便时,可以与物流沟通收货时间)</p>
+				</ion-item>
+				<ion-item class="img-bg">
+					<div><img src="./public/images/icons/bg.png"></div>
+				</ion-item>
+				<ion-item class="item-thumbnail-left bor-top item-paddind-top">
+						<img src="./public/images/product/goods-04.png">
+				    	<h2>BSE08 酷炫黑色高端健身房动感单车厂家批发直销</h2>
+				    	<p>[经典款] 黑色 动感飞轮</p>
+				    	<div class="money">
+                            <span class="red-color">￥399</span>
+                            <span class="no-price">￥688</span>
+                            <span class="fr red-color">×5</span>
+                        </div>
+				</ion-item>
+				<ion-item  class="item-icon-right bor-top">
+					配送方式 <span class="fr">快递免费</span>
+					<i class="icon ion-ios-arrow-right"></i>
+				</ion-item>
+				<ion-item>
+					运费险 <span class="fr">商家送，确认收货前退货可赔</span>
+				</ion-item>
+				<ion-item>
+					买家留言
+					<textarea class="order-message" placeholder="选填:对本次交易的说明（建议填写与商品相关的）"></textarea>
+				</ion-item>
+				<ion-item>
+					共2件商品 <span class="fr red-color">小计：￥798.00</span>
+				</ion-item>
+				<div class="bor-top">
+					<ion-radio ng-model="choice" ng-value="'A'">分期购买（最高3期免息）</ion-radio>
+  					<ion-radio ng-model="choice" ng-value="'B'">匿名购买</ion-radio>
+				</div>
+					
+			</ion-list>
+		</ion-content>
+		<ion-footer-bar class="sub-button">
+			<div>
+				<p>合计:<span class="fr red-color">￥798.00</span></p>
+			</div>
+			<div>
+				<button class="button button-settlement" ui-sref="app.payment">提交订单</button>
+			</div>
+		</ion-footer-bar>	
+
+	</div>
+</ion-view>

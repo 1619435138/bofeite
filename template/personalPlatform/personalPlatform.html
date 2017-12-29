@@ -1,0 +1,24 @@
+<ion-view view-title="平台信息"> 
+        <!-- 头部内容 -->
+        <app-header></app-header>
+
+        <ion-header-bar class="bar bar-subheader">
+            <div class="order-title">
+                <div style="" class="tab_default" ng-repeat="tabNames in tabNames track by $index" ng-click="activeSlide($index)" ng-class="slectIndex==$index ? 'tab_select' : '' ">
+                    {{tabNames}}
+                    <div class="arrow-top" style="left:{{15+$index*33.3333}}%" ng-show="slectIndex==$index"></div>
+                </div>
+            </div>
+        </ion-header-bar>
+
+
+        <ion-slide-box on-slide-changed="slideChanged(index)" active-slide="slideIndex" does-continue="false" show-pager="false">
+            <ion-slide ng-repeat="page in goodsPages track by $index">
+
+                <div ng-include="page.htmlUrl" class="{{page.className}}" ng-title="{{page.title}}"></div>
+
+            </ion-slide>
+        </ion-slide-box>
+
+ 
+</ion-view>

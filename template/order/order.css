@@ -1,0 +1,82 @@
+body, html {
+	margin: 0 auto;
+	height: 100%;
+}
+
+.order-title {
+    display:flex;
+    width:100%;
+    font-family: '黑体';
+}
+.tab_default{ 
+    flex:1;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 8px;
+    color: #000;
+}
+.tab_select{
+    border-bottom: solid 3px #5fdec9;
+    color: #5FDEC9;
+    
+}
+.icon-left, .icon-right {
+    color: #fff;
+}
+
+.slider-slide, .slider {
+	height: 100% !important;
+}
+
+.order .slider-pager {
+	display: none;
+}
+
+.order .order-list .opinion h5 {
+    color: #10ffd7;
+    padding: 20px 10px 14px;
+}
+
+.order .order-list h2 {
+    
+    padding-bottom: 7px;
+    white-space: initial;
+}
+
+.order .order-list p.single {
+    font-size: 12px;
+    color: #5FDEC9;
+}
+
+.order .order-total p {
+    white-space: initial;
+}
+
+.order .order-total p > i {
+    color: #10ffd7;
+}
+
+.order .but-order {
+    margin-top: 20px;
+}
+
+.order .but-order > button {
+    font-size: 12px;
+    height: 30px;
+    min-height: 30px;
+    line-height: 20px;
+}
+
+.empty-img {
+    width: 160px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.empty-txt {
+    text-align: center;
+    margin-top: 20px;
+}
+.empty-txt >p {
+    color: #ccc
+}

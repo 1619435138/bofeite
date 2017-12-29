@@ -1,0 +1,31 @@
+body, html, .personalData {
+	background: #fff;
+	margin: 0 auto;
+	height: 100%
+}
+
+.personalData .header-bg {
+	background-color: #5FDEC9;
+	color: #fff;
+}
+
+.personalData .header-bg .title {
+	color: #fff;
+}
+
+.personalData .data-list {
+	padding-bottom: 0;
+}
+
+.personalData .data-list h2 {
+	display: block;
+    line-height: 55px;
+}
+
+.personalData .data-list img {
+	width: 50px;
+}
+
+.personalData .data-list > div {
+	line-height: 55px;
+}

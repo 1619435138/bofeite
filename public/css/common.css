@@ -1,0 +1,39 @@
+/*头部样式*/
+.header-common .header-bg {
+	background-color: #5FDEC9;
+}
+
+.header-common .header-bg .button-left > i {
+	background: url('../../public/images/icons/ewm.png') no-repeat 0 0;
+	background-size: contain;
+	width: 30px;
+	height: 30px;
+	top: 7px;
+}
+
+.header-common .header-bg .button-right > i {
+	background: url('../../public/images/icons/wx3x.png') no-repeat 0 0;
+	background-size: contain;
+	width: 40px;
+	height: 40px;
+	top: 2px;
+}
+
+/*搜索样式*/
+.header-common .search {
+	width: 100%;
+}
+
+.header-common .search > .input-bg {
+	background-color: #07c1a4;
+}
+
+.header-common .search input {
+	width: 100%;
+	color: #fff
+}
+
+.header-common .search .placeholder-icon:last-child {
+	color: #fff
+}
+

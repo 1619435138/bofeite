@@ -1,0 +1,129 @@
+body, html, .cityWide {
+	background: #f0f0f0;
+	margin: 0 auto;
+	font-family: "黑体";
+}
+
+h5, h2{
+	font-family: "黑体";
+}
+
+.cityWide .header-bg {
+	background-color: #5FDEC9;
+	
+}
+
+.cityWide .title, .cityWide .icon-left, .cityWide .icon-right {
+	color: #fff;
+}
+
+.cityWide .icon-right .right-l {
+	right: 44px;
+}
+
+/*团购中心*/
+.cityWide .main {
+	margin-top: 44px;
+}
+
+.cityWide .time {
+	height: 34px;
+	line-height: 34px;
+}
+
+.cityWide .time ul {
+	padding-left: 46px;
+}
+
+.cityWide .time ul li {
+	float: left;
+}
+
+.cityWide .time ul li a {
+	padding: 0 8px;
+	color: #202121;
+}
+
+.cityWide .time ul li:nth-child(1) > a {
+
+    border-right: 1px dashed #C0BEBF;
+}
+
+.cityWide .time ul li.active i {
+	height: 34px;
+	border-bottom: 3px solid #5FDDC7;
+}
+
+
+/*你喜欢的 | YOU LOVE*/
+
+.cityWide .you-love > h5 {
+	text-align: center;
+	background-color: #F0F0F0;
+	margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+
+    padding-bottom: 10px;
+}
+
+.cityWide .you-love .padding-left {
+ 	margin: 0;
+ 	padding-top: 8px;
+    padding-left: 140px;
+    min-height: 100px;
+    border: none;
+    margin-bottom: 10px;
+}
+.cityWide .you-love .padding-left > img:first-child{
+    max-width: 120px;
+    max-height: 120px;
+}
+
+.cityWide .you-love h2 {
+	border-bottom: 1px solid #DCDCDC;
+	padding-bottom: 7px;
+}
+
+.cityWide .you-love p {
+	font-size: 12px;
+	color: #070707;
+}
+
+.cityWide .you-love .group {
+	padding-top: 7px;
+	color: #43D6C6;
+}
+
+.cityWide .you-love .group span {
+	background-color: #43D6C6;
+	padding: 2px 5px;
+	color: #fff
+}
+
+.cityWide .you-love .progress-bar {   
+	border-radius:12px;
+	height: 12px;
+	width: 120px;
+	border: 1px solid #ddd;
+	overflow: hidden;
+	background-color: #D2D2D2;
+	margin-bottom: 5px;
+}   
+  
+.cityWide .you-love .progress-bar span{   
+	background-color:#43D6C6;   
+	display: block;
+	height: 12px;
+}
+
+.cityWide .you-love .fl > p > span {
+	color: #43D6C6
+}
+
+.cityWide .you-love .fr > .icon-cart{
+	background: url('../../public/images/icons/gwc.png') no-repeat 0 0;
+	background-size: 100% 100%;
+	width: 40px;
+	height: 40px;
+}

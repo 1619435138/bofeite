@@ -1,0 +1,63 @@
+body, html, .orderDetails {
+	height: 100%;
+	margin: 0 auto;
+	background: #F0F0F0;
+}
+
+.orderDetails .header-bg {
+	color: #fff !important;
+	background-color: #5FDEC9;
+}
+
+.orderDetails .header-bg .title {
+	color: #fff;
+}
+
+.orderDetails .item, .orderDetails .item h2, .orderDetails .item p {
+	white-space: inherit;
+	font-size: 12px;
+}
+
+.orderDetails .item div {
+	color: #0e0e0e;
+	font-size: 12px;
+}
+
+.orderDetails .red-color {
+	color: #f00;
+}
+
+.orderDetails .item .green-color {
+	color: #5FDEC9;
+}
+
+.orderDetails .item .no-price {
+	text-decoration: line-through;
+}
+
+.orderDetails .item-paddind-top {
+	padding-top: 16px;
+}
+
+.orderDetails .item-paddind-top img {
+	border: 1px solid #ccc;
+}
+
+
+.orderDetails .img-bg {
+	padding: 0;
+}
+
+.orderDetails .order-message {
+	width: 100%;
+	font-size: 12px;
+}
+
+.orderDetails .sub-button > div	{
+	position: absolute;
+	right: 0;
+}
+.orderDetails .sub-button > div:nth-child(1){
+	right: 80px;
+    line-height: 34px;
+}

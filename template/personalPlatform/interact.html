@@ -1,0 +1,35 @@
+<ion-view view-title="博友互动"> 
+    <ion-content class="logistics interact">        
+        <div class="logistics-list">
+            <div class="bor-top list-time" ng-if="onInteract">
+                <div class="time"><span>今天  10：30</span></div>
+                <div class="time-list">
+                    <p><span>订单派送中...</span>（申通快递）</p>
+                    <div class="number">
+                        <p class="fr">运单编号：1234567891011</p>
+                    </div>
+                    <ion-list class="clearfix">
+                        <ion-item class="item-thumbnail-left">
+                            <img src="./public/images/product/city-buy-01.png">
+                                <h5>BSE06外贸品质商用动感单车 多功能磁控</h5>
+                        </ion-item>
+                        <ion-item class="item-thumbnail-left">
+                            <img src="./public/images/product/city-buy-01.png">
+                                <h5>BSE06外贸品质商用动感单车 多功能磁控多功能磁控</h5>
+                        </ion-item>
+                    </ion-list>
+                </div>
+            </div>
+
+            <div class="bor-top" ng-if="isInteract">
+                <div class="empty-img">
+                    <img src="./public/images/icons/interact.png">
+                </div>
+                <div class="empty-txt">
+                    <h4>您的博友竟然没有给您信息哦</h4>
+                </div>
+            </div>
+            
+        </div>
+    </ion-content>
+</ion-view>

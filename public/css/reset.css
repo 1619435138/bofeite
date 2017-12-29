@@ -1,0 +1,204 @@
+body, html {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+    -webkit-box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent; /* 清除移动端默认的 点击高亮效果 */
+    
+    font-size: 12px;
+    height: 100%;
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+	background: #FAFBF6;
+    margin: 0 auto;
+}
+
+p, ol, ul, li, h1, h2, h3, h4, h5, h6 {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	overflow: hidden;
+}
+
+/* 
+	outline （轮廓）是绘制于元素周围的一条线，
+	位于边框边缘的外围，可起到突出元素的作用。 
+*/
+
+a, a:hover {
+	outline: none;  
+	text-decoration: none;
+	cursor:pointer;
+	
+}
+
+input {
+	outline: none;
+	border: none;
+	padding: 0;
+	-webkit-appearance: none;
+}
+
+img {
+	outline: none;
+	border: none;
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+i, span, em {
+	display: inline-block;
+	font-style:normal
+}
+
+.clearfix::before,
+.clearfix::after {
+	content: "";
+	height: 0;
+	line-height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+.clear {
+	clear: both;
+	overflow: hidden;
+}
+
+.block {
+	display: block;
+}
+
+/*上边框*/
+.bor-top{
+	border-top: 10px solid #EBE9EA !important;
+}
+
+/*下边款*/
+.bor-bot{
+	border-bottom: 10px solid #EBE9EA;
+}
+
+/*下边空出来*/
+.height-but {
+	height: 60px;
+}
+
+/*不换行*/
+.oneLine {
+	overflow:hidden;
+	text-overflow:ellipsis;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:1;
+}
+
+/*加载*/
+.spinner-color {
+	stroke: #5FDEC9;
+    fill: #5FDEC9;
+}
+
+.bar-settlement-bg {
+	background-color: #5FDEC9;
+	color: #fff;
+}
+
+/*按钮*/
+.bar-settlement, .button-settlement {
+	background-color: #5FDEC9;
+	color: #fff;
+}
+
+.button.button-settlement.activated,
+.button.button-settlement.active {
+	border-color: #00f9d0;
+	color: #fff;
+    background-color: #00f9d0
+}
+
+/*按钮边框*/
+.button-settlement-border {
+	border: 1px solid #5FDEC9;
+	color: #5FDEC9;
+	background-color: #fff;
+	border-radius: 22px;
+}
+.button-settlement-border.activated,
+.button-settlement-border.active {
+	border: 1px solid #00f9d0;
+	color: #00f9d0;
+	background-color: #fff;
+	border-radius: 22px;
+}
+
+.button-settlement:hover{
+	color: #fff !important;
+}
+
+.button:hover {
+	color: #00f9d0;
+}
+
+.button.button-block, .button.button-full {
+	margin: 0;
+}
+
+/*多选框*/
+.checkbox input, .checkbox-icon{
+	width: 20px;
+	height: 20px;
+}
+
+.checkbox input:after, .checkbox-icon:after {
+	width: 10px;
+	height: 5px;
+}
+
+.checkbox input:checked+.checkbox-icon:before, .checkbox input:checked:before {
+	background: #5fdec9;
+    border-color: #5fdec9;
+}
+
+ion-tabs.tabs-color-active-balanced .tab-item.activated, 
+ion-tabs.tabs-color-active-balanced .tab-item.active, 
+ion-tabs.tabs-color-active-balanced .tab-item.tab-item-active {
+	color: #5fdec9 !important;
+}
+
+.height {
+	height: 100px;
+}
+
+.six-hight {
+	height: 60px;
+}
+
+/*底部高度*/
+.footer-height {
+	height: 60px;
+}
+/*动画的切换开关  青绿色 碧绿*/ 
+.toggle.toggle-viridity input:checked+.track {
+	border-color: #5FDEC9;
+    background-color: #5FDEC9;
+}
+[nav-view-transition=ios][nav-view-direction=forward], 
+[nav-view-transition=ios][nav-view-direction=back] {
+	background: transparent;
+}
+
+.side-menu-right .list {
+	border-top: 10px solid #EBE9EA !important;
+}

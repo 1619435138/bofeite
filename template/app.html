@@ -1,0 +1,83 @@
+<ion-view>
+	<!-- 菜单 -->
+	<ion-side-menus>
+
+		<ion-side-menu side="left" width="300">
+			<ion-header-bar class="bar-settlement-bg">
+				<span class="title">侧边菜单</span>
+			</ion-header-bar>
+			<ion-content class="side-menu-right">
+				<ion-list>
+					<ion-item class="item-icon-left">
+						<i class="icon ion-ios-email-outline"></i>我的消息
+					</ion-item>
+					<ion-item class="item-icon-left">
+						<i class="icon ion-ios-star-half"></i>会员中心
+					</ion-item>
+					<ion-item class="item-icon-left">
+						<i class="icon ion-social-buffer-outline"></i>其他
+					</ion-item>
+				</ion-list>
+				<ion-list class="bor-top">
+					<ion-item class="item-icon-left">
+						<i class="icon ion-ios-people-outline"></i>我的好友
+					</ion-item>
+					<ion-item class="item-icon-left">
+						<i class="icon ion-ios-location-outline"></i>附近的人
+					</ion-item>
+				</ion-list>
+				<ion-list class="bor-top">
+					<ion-item class="item-icon-left">
+						<i class="icon ion-tshirt-outline"></i>个性皮肤
+						<span class="item-note">官方红</span>
+					</ion-item>
+					<ion-item class="item-icon-left">
+						<i class="icon ion-ios-cloud-outline"></i>云盘
+					</ion-item>
+					<ion-item class="item-icon-left">
+						<i class="icon ion-ios-ionic-outline"></i>模式
+					</ion-item>
+					<ion-item class="item-icon-left">
+						<i class="icon ion-ios-alarm-outline"></i>闹钟
+					</ion-item>
+				</ion-list>
+
+				<ion-list class="bor-top">
+					<ion-item class="item-icon-left">
+						<i class="icon ion-tshirt-outline"></i>
+						<span class="item-note">官方红</span>
+					</ion-item>
+				</ion-list>
+
+				<!-- <div class="padding">
+					<div menu-close class="button button-assertive button-full">注销</div>
+				</div> -->
+				
+			</ion-content>
+
+			<ion-footer-bar>
+				<div class="fl">
+					<button menu-close class="button button-assertive button-full">注销</button>
+				</div>
+				<div class="fr">
+					<button menu-close class="button button-settlement button-full">登录</button>
+				</div>
+			</ion-footer-bar>
+		</ion-side-menu>
+
+		<ion-side-menu-content>
+			<!-- 头部内容 -->
+        	<!-- <app-header></app-header> -->
+
+			<!-- 二级路由 -->
+			<!-- <ion-nav-view></ion-nav-view> -->
+			<div ui-view></div>
+
+		</ion-side-menu-content>
+
+	</ion-side-menus>
+
+	<!-- 尾部内容 -->
+        <!-- <app-footer ></app-footer> -->
+	
+</ion-view>

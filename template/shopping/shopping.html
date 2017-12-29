@@ -1,0 +1,79 @@
+<ion-view view-title="我的购物车">
+    <div class="shopping">
+        <!-- 头部内容 -->
+        <app-header></app-header>
+        <!-- 商品参数 -->
+        <ion-content class="main margin-top">
+            <div ng-show="isNone">
+                <ion-refresher pulling-text="松开刷新..." on-refresh="addItem()"></ion-refresher>
+                <div class="">
+                    <ion-list can-swipe="true">
+                        <div class="goods-list bor-top" ng-repeat="item in data track by $index">
+                            <div class="edit">
+                                <span ng-click="onEdit()">编辑</span>
+                            </div>
+                            <ion-item class=" item-thumbnail-left">
+                                <img class="left-img" ng-src="{{item.img}}">
+                                <div ng-if="isnoEdit">
+                                    <h4>{{item.name}}</h4>
+                                    <p class="desc">{{item.desc}}</p>
+                                    <p class="money">
+                                        <span>￥{{item.sale}}</span>
+                                        <i class="fr">×{{item.number}}</i>
+                                        <span>￥{{item.money}}</span>
+                                    </p>
+                                </div>
+                                <div ng-if="isonEdit" ng-class="clearfix">
+                                    <div class="fl number-reduce"><i class="icon ion-ios-minus-empty"></i></div>
+                                    <div class="fl number">
+                                        <input type="text" name="number">
+                                    </div>
+                                    <div class="fl number-plus"><i class="icon ion-ios-plus-empty"></i></div>
+                                    <div class="clearfix"></div>
+                                    <div class="goods-style">
+                                        <p class="fl">[经典款] 黑色 动感飞轮动感飞轮</p><i class="icon ion-ios-arrow-down" ng-click="showModal()"></i></div>
+                                </div>
+                                <div class="left-check">
+                                    <ion-checkbox ng-model="isChecked"></ion-checkbox>
+                                </div>
+                                <ion-option-button class="but-delete" ng-click="data.splice($index, 1)">删除</ion-option-button>
+                            </ion-item>
+                        </div>
+                    </ion-list>
+                </div>
+            </div>
+            <div class="empty-cart" ng-show="isEmpty">
+                <div>
+                    <img class="full-image" src="./public/images/icons/shopping.png">
+                </div>
+                <p>购物车是空的，快去选购您喜欢的商品吧！</p>
+                <p class="bg-buy padding-vertical">
+                    <a class="buying">去逛逛</a>
+                </p>
+            </div>
+            <div class="height-but"></div>
+        </ion-content>
+        <ion-footer-bar align-title="right" class="bar settlement" ng-if="isnoEdit">
+            <div class="all-check">
+                <ion-checkbox ng-model="isChecked"><span>全选</span></ion-checkbox>
+            </div>
+            <p class="all-money">合计: ￥ 798.00</p>
+            <div class="buttons">
+                <span class="bar-settlement balance">结算</span>
+            </div>
+        </ion-footer-bar>
+        <ion-footer-bar align-title="right" class="bar settlement" ng-if="isonEdit">
+            <div class="all-check">
+                <ion-checkbox ng-model="isChecked"><span>全选</span></ion-checkbox>
+            </div>
+            <div class="favorite-bg">
+                <span class="bar-settlement favorite">移至收藏夹</span>
+            </div>
+            <div class="button-bg">
+                <span class="bar-settlement balance">删除</span>
+            </div>
+        </ion-footer-bar>
+        <!-- 尾部内容 -->
+        <app-footer ></app-footer>
+    </div>
+</ion-view>

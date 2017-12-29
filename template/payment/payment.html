@@ -1,0 +1,34 @@
+<ion-view view-title="我的订单 之 支付">
+	<div class="payment">
+	
+		<!-- 头部内容 -->
+        <app-header></app-header>
+	    
+		<ion-content class="bor-top margin-top">
+			<ion-list>
+				<ion-item class="item-thumbnail-right item-paddind-top">
+					<img src="./public/images/product/goods-04.png">
+			    	<div>
+			    		<span>订单金额:</span> 
+			    		<p>BSE08 酷炫黑色高端健身房动感单车厂家批发直销</p>
+			    	</div>
+			    	<div>
+			    		<span>订单金额:</span> <span>￥798.00</span>
+			    	</div>
+				</ion-item>
+			</ion-list>
+
+			<ion-list>
+				<ion-radio><i class="icon icons-bgImg fl"></i>微信</ion-radio>
+				<ion-radio><i class="icon icons-bgImg fl"></i>支付宝</ion-radio>
+				<ion-radio><i class="icon icons-bgImg fl"></i>银行卡</ion-radio>
+			</ion-list>
+		</ion-content>
+		<ion-footer-bar class="six-hight">
+			
+				<button class="button button-block  button-settlement" ui-sref="app.paymentState">立即支付</button>
+			
+		</ion-footer-bar>
+
+	</div>
+</ion-view>

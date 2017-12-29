@@ -1,0 +1,61 @@
+body, html {
+	height: 100%;
+
+}
+
+.classify {
+	height: 100%;
+	background-color: #F0F0F0;
+
+}
+
+.classify .classify-list {
+	height: 348px;
+}
+
+.classify .slide-left, .classify .slide-right {
+	position: relative;
+	height: 348px;
+	padding: 0px;
+}
+
+.classify .classify-left {
+	padding: 0;
+	
+}
+
+.classify .left-list .item {
+	border: none;
+	background-color: #5FDEC9;
+	color: #fff;
+	border-bottom: 2px dashed #fff;
+	font-size: 12px;
+	letter-spacing: 2px;
+	padding: 16px 0px;
+	text-align: center;
+}
+
+.classify .slide-right .goods {
+	background-color: #fff;
+	border-radius: 10px;
+	width: calc(50% - 5px);
+	border: 1px solid #DCDCDC;
+}
+
+.classify .slide-right .goods:nth-child(2n) {
+	margin-left: 5px;
+}
+
+.classify .slide-right .goods:nth-child(2n-1) {
+	margin-right: 5px;
+}
+
+.classify .slide-right .goods img {
+	padding: 5px 0 5px 0;
+}
+
+.classify .slide-right .right-list span {
+	text-align: center;
+	font-size: 12px;
+	padding: 5px 0;
+}

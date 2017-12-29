@@ -1,0 +1,84 @@
+
+
+.search .icon-left > i {
+	color: #fff
+}
+
+/*搜索中心*/
+.search .main .history, .search .main .goods {
+	padding-left: 0;
+	padding-right: 0;
+	height: 40px;
+	position: relative;
+}
+
+.search .main .history > h4, .search .main .goods > h4 {
+	padding-left: 11px;
+	line-height: 35px;
+	height: 35px;
+}
+
+.search .main .i-right {
+	position: absolute;
+    right: 11px;
+    width: 32px;
+    top: -12px;
+    height: 56px;
+    color: #929290;
+}
+
+.search .list-history ul {
+	padding-left: 14px;
+	padding-right: 14px;
+}
+
+.search .list-history ul li {
+	float: left;
+	width: auto;
+	height: 35px;
+	line-height: 35px;
+	border-radius: 50%;
+	text-align: center;
+	border-radius: 10px;
+	margin-right: 15px;
+	margin-bottom: 14px;
+}
+
+.search .list-history li a {
+	padding: 8px 22px;
+	background-color: #efe9e9;
+	color: #2A2A2A;
+}
+
+/*搜索尾部*/
+.search .footer-bg {
+	height: 80px;
+}
+
+.search .footer-bg .down-bg {
+	background-color: #cecece;
+	width: 60%;
+	height: 34px;
+	overflow: hidden;
+	line-height: 34px;
+	margin: 0 auto;
+	border-radius: 20px;
+	margin-top: 13px;
+	font-size: 12px;
+}
+
+.search .footer-bg .hold-down{
+	position: relative;
+	color: #929290;
+}
+
+.search .footer-bg .hold-down i {
+	position: absolute;
+	/*left: 30px;*/
+}
+
+.search .footer-bg .hold-down p {
+	margin: 0;
+	text-align: left;
+    
+}

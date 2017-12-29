@@ -1,0 +1,115 @@
+body, html, .login {
+	height: 100%;
+	margin: 0 auto;
+	background: url('../../public/images/my/login-bg.jpg') no-repeat 0 0;
+	background-size: 100% 100%;
+}
+
+.login .login-portrait {
+	width: 120px;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+
+.login .login-main {
+	padding: 0 8%;
+}
+
+.login .login-main .item {
+	border: none;
+	border-bottom: 1px solid #fff;
+}
+
+.login .login-main .item input {
+	border-left: 1px solid #fff;
+	padding: 0 0 0 10px;
+    height: 30px;
+    margin: 4px 0 0 6px;
+    line-height: 30px;
+    width: calc(100% - 6px);
+}
+
+.login .login-main .input-label {
+	margin-left: 12px;
+}
+
+.login .login-main .icons-left {
+	position: absolute;
+	left: 0;
+	top: 38px;
+	color: #fff;
+	font-size: 20px;
+}
+
+.login .login-main .icons-right {
+	position: absolute;
+	right: 0;
+	top: 36px;
+	color: #fff;
+	font-size: 22px;
+}
+
+.login .login-edit {
+	margin-top: 16px;
+	color: #fff;
+	font-size: 13px;
+}
+
+.login .login-edit .forget {
+	color: #fff;
+}
+
+.login .login-but {
+	margin-top: 50px;
+}
+
+.login .login-third {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.login .login-third .third-line {
+	position: relative;
+}
+
+.login .third-line > span.line {
+	border-bottom: 1px solid #fff; 
+	position: absolute;
+	width: 34%;
+}
+
+.login .third-line > span.line-left {
+    left: 0;
+}
+
+.login .third-line > span.line-right {
+    right: 0;
+}
+
+.login .third-line > span.line-txt{
+	position: absolute;
+	/*width: 72px*/
+    left: calc(50% - 41px);
+    top: -11px;
+    color: #fff;
+    padding: 0 4px;
+}
+
+.login .third-icon .col {
+	margin-top: 20px;
+	color: #fff;
+}
+
+.login .third-icon img {
+	width: 80px;
+	margin: 0 auto;
+}
+
+.login .third-icon span {
+	padding-top: 8px;
+}
+
+
+::-webkit-input-placeholder, .login .input-label {
+	color: #fff !important;
+}

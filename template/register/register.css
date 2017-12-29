@@ -1,0 +1,89 @@
+body, html, .register {
+	height: 100%;
+	margin: 0 auto;
+	background: #fff;
+}
+
+.register .header-bg {
+	color: #fff !important;
+	background-color: #5FDEC9;
+}
+
+.register .header-bg .title {
+	color: #fff;
+}
+
+.register .register-portrait {
+	width: 120px;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+
+.register .register-main {
+	padding: 0 8%;
+	margin-top: 30px;
+}
+
+.register .register-main .item {
+	border: none;
+	margin-top: 3px;
+	border-bottom: 1px solid #ccc;
+}
+
+.register .register-main .item .icon {
+	color: #ccc;
+}
+
+.register .register-main .item input {
+	padding: 0 0 0 10px;
+    height: 30px;
+    margin: 4px 0 0 6px;
+    line-height: 30px;
+    width: calc(100% - 6px);
+}
+
+.register .register-main .icons-right {
+	position: absolute;
+	right: 0;
+	color: #ccc;
+	font-size: 22px;
+}
+
+.register .register-main .getEmail{
+	color: #fff;
+    background: #5fdec9;
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 12px;
+}
+
+.register .register-agree {
+	margin-top: 16px;
+}
+
+.register .item-content {
+	font-size: 12px;
+}
+
+.register .item-checkbox .checkbox {
+	top: 58%;
+}
+
+.register .register-agree .item {
+	border: none;
+	color: #5FDEC9;
+	margin-top: 3px;
+}
+
+.register .service {
+	color: #ccc
+}
+
+.register .service a {
+	color: #5FDEC9;
+}
+
+
+::-webkit-input-placeholder, .register .input-label {
+	color: #ccc !important;
+}

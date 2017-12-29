@@ -1,0 +1,35 @@
+<ion-view view-title="我的订单 之 支付成功">
+	<div class="paymentState">
+	
+		<!-- 头部内容 -->
+        <app-header></app-header>
+	    
+		<ion-content class="bor-top margin-top">
+			<div>
+				<img src="./public/images/banner/pay-01.png">
+			</div>
+			<ion-list>
+				<ion-item>
+					<p>
+						<span>收货人</span>&nbsp;&nbsp;
+						<span>张三</span>&nbsp;&nbsp;
+						<span>13712345678</span>
+					</p>
+					<p>广东省广州市海珠江燕路南珠广场附近(江南大道南海鹰路88号)</p>
+				</ion-item>
+				<ion-item>
+					<p>总价：<span class="red-color">￥798.00</span></p>
+					<div class="buts">
+						<button class="button button-settlement-border" ui-sref="app.orderDetails">查看订单</button>
+						<span></span>
+						<button class="button button-settlement-border" ui-sref="app.index">返回首页</button>
+					</div>
+				</ion-item>
+				<ion-item class="bor-top">
+					<p>安全提醒</p>
+					<p class="red-color">付款成功后，博菲特不会以付款异常、卡单、系统升级为由联系您请勿泄露银行卡号、手机验证码，否则会造成钱款损失。谨防电话诈骗！<a>《查看更多防骗知识》</a></p>
+				</ion-item>
+			</ion-list>
+		</ion-content>
+	</div>
+</ion-view>

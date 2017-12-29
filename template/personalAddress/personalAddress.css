@@ -1,0 +1,24 @@
+body, html, .personalAddress {
+	background: #F0F0F0 !important;
+	margin: 0 auto;
+	height: 100%
+}
+
+.personalAddress .header-bg {
+	background-color: #5FDEC9;
+	color: #fff;
+}
+
+.personalAddress .header-bg .title {
+	color: #fff;
+}
+
+
+.personalAddress .opinion-list a {
+	font-size: 12px;
+	color: #101010
+}
+
+.personalAddress .item-icon-right .icon {
+	color: #ccc
+}

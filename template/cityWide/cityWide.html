@@ -1,0 +1,77 @@
+
+    <div class="cityWide" ng-show="isShow">
+        <!-- 头部内容 -->
+        <app-header></app-header>
+
+        <!-- 中心内容 -->
+        <ion-content class="bor-top margin-top">
+            
+            <div class="group-buying">
+                
+                <div class="time">
+                    <ul>
+                        <li class="active"><a><i>一周团</i></a></li>
+                        <li><a><i>下周购</i></a></li>
+                    </ul>
+                </div>
+
+                <div class="banner">
+                    <img src="./public/images/banner/city-banner-01.png">
+                </div>
+
+                <div class="you-love" ng-repeat="item in goods track by $index">
+                    <h5>{{item.name}}</h5>
+                    <div class="list">
+                        
+                        <a class="item item-thumbnail-left padding-left" ng-repeat="product in item.product track by $index" ng-click="">
+                            <img src="./public/images/product/city-buy-01.png">
+                            <h2>{{product.name}}</h2>
+                            <p class="group">{{product.number}}人组团：￥{{product.group}} <span>半价</span></p>
+                            <p class="single">单买价：￥{{product.single}}</p>
+                            <div>
+                                <div class="fl">
+                                    <div class="progress-bar"><span style="width:{{product.progressBar}}%;"></span></div>
+                                    <p><span>仅剩{{product.overplus}}%</span> | 限量{{product.limited}}件</p>
+                                </div>
+                                <div class="fr">
+                                    <i class="icon icon-cart"></i>
+                                </div>
+                          </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- <div class="you-love">
+                    <h5>周团 | WEEK</h5>
+                    <div class="list">
+                        
+                        <a class="item item-thumbnail-left padding-left">
+                            <img src="./public/images/product/city-buy-01.png">
+                            <h2>BSE06外贸品质商用动感单车 多功能磁控</h2>
+                            <p class="group">2人组团：￥149.50 <span>半价</span></p>
+                            <p class="single">单买价：￥269.00</p>
+                            <div>
+                                <div class="fl">
+                                    <div class="progress-bar"><span style="width:40%;"></span></div>
+                                    <p><span>仅剩89%</span> | 限量300件</p>
+                                </div>
+                                <div class="fr">
+                                    <i class="icon icon-cart"></i>
+                                </div>
+                          </div>
+                        </a>
+
+                    </div>
+                </div> -->
+
+            </div>
+
+            <div class="height-but"></div>
+           
+        </ion-content>
+
+        <!-- 尾部内容 -->
+        <app-footer ></app-footer>
+      
+    </div>

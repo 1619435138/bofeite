@@ -1,0 +1,37 @@
+/*头部样式*/
+.header-bg {
+	background-color: #5FDEC9;
+}
+.header-bg .title {
+	width: 50%;
+	margin: 0 auto;
+}
+.icon-left > i, .icon-right > i {
+	color: #fff;
+}
+
+/*搜索样式*/
+.search {
+	width: 100%;
+}
+
+.search > .input-bg {
+	background-color: #07c1a4;
+}
+
+.search input {
+	width: 100%;
+	color: #fff !important;
+}
+
+.search .placeholder-icon:last-child {
+	color: #fff
+}
+
+.margin-top {
+	margin-top: 43px;
+}
+
+::-webkit-input-placeholder {
+   color:#fff !important;
+}

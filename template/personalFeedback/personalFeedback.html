@@ -1,0 +1,40 @@
+<ion-view view-title="我的意见 之 体验问题">
+    <div class="personalFeedback">
+        <!-- 头部内容 -->
+        <app-header></app-header>
+
+        <ion-content>
+            <div class="bor-top margin-top">
+                <div class="opinion"><h5>请选择反馈问题的类型</h5></div>
+                <ion-list class=" block opinion-list">
+                    <ion-radio ng-model="choice" ng-value="'A'">功能异常 <i>不能使用现有功能</i></ion-radio>
+                    <ion-radio ng-model="choice" ng-value="'B'">其他问题 <i>用的不爽、功能建议都提过来吧</i></ion-radio>                
+                </ion-list>
+            </div>
+
+            <div class="bor-top">
+                <div class="opinion"><h5>意见和问题</h5></div>
+                <ion-list class=" block problem-list">
+                    <ion-item>
+                        <div>请描述您使用手机博菲特时遇到的问题和意见，若功能异常，上传页面截图更快解决哦！（商品评价不在这提交哦）</div>
+                    </ion-item>               
+                </ion-list>
+            </div>
+
+            <div class="bor-top">
+                <div class="opinion"><h5>提供问题截图</h5></div>
+                <ion-list class=" block ">
+                    <ion-item class=" item-icon-left">
+                        <i class="icon ion-ios-camera"></i>
+                        添加图片
+                    </ion-item>               
+                </ion-list>
+            </div>
+
+            
+            <div class="height-but"></div>
+
+        </ion-content>
+
+    </div>
+</ion-view>

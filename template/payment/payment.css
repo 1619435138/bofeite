@@ -1,0 +1,64 @@
+body, html, .payment {
+	height: 100%;
+	margin: 0 auto;
+	background: #fff;
+}
+
+.payment .header-bg {
+	color: #fff !important;
+	background-color: #5FDEC9;
+}
+
+.payment .header-bg .title {
+	color: #fff;
+}
+
+.payment .item, .payment .item h2, .payment .item p {
+	white-space: inherit;
+	font-size: 12px;
+}
+
+.payment .item div {
+	color: #0e0e0e;
+	font-size: 12px;
+}
+
+.payment .red-color {
+	color: #f00;
+}
+
+.payment .item-paddind-top img {
+	border: 1px solid #ccc;
+}
+
+.payment .icons-bgImg {
+	width: 30px;
+	height: 30px;
+}
+
+.payment .item-content {
+	line-height: 30px;
+    padding: 8px 16px;
+}
+
+.payment .item-content > span {
+	float: left;
+}
+
+.payment .radio-icon{
+	font-size: 16px;
+    color: #5FDEC9;
+}
+
+.payment .item-radio:nth-child(1) .radio-content .icons-bgImg {
+	background: url('../../public/images/icons/pay-wxin.png') no-repeat 0 0;
+	background-size: 100% 100%;
+}
+.payment .item-radio:nth-child(2) .radio-content .icons-bgImg {
+	background: url('../../public/images/icons/pay-zfb.png') no-repeat 0 0;
+	background-size: 100% 100%;
+}
+.payment .item-radio:nth-child(3) .radio-content .icons-bgImg {
+	background: url('../../public/images/icons/pay-yhk.png') no-repeat 0 0;
+	background-size: 100% 100%;
+}

@@ -1,0 +1,120 @@
+<ion-view>
+   
+    
+    <div class="index">
+        
+        <app-header></app-header>
+
+        <ion-content class="margin-top">
+            <!-- 轮播 -->
+            <div class="banner bor-bot">
+                <ion-slide-box does-continue="{{banner.doesContinue}}" auto-play="banner.autoPlay" slide-interval="{{banner.slideInterval}}" show-pager="{{banner.showPager}}">
+                    <ion-slide>
+                        <div class="box"><img src="./public/images/banner/banner-01.jpg"></div>
+                    </ion-slide>
+                    <ion-slide>
+                        <div class="box"><img src="./public/images/banner/banner-02.jpg"></div>
+                    </ion-slide>
+                    <ion-slide>
+                        <div class="box"><img src="./public/images/banner/banner-03.jpg"></div>
+                    </ion-slide>
+                    <ion-slide>
+                        <div class="box"><img src="./public/images/banner/banner-04.jpg"></div>
+                    </ion-slide>
+                </ion-slide-box>
+            </div>
+
+            <!-- 列表项 -->
+            <ion-list class="label">
+                <div class="row row-wrap">
+                    <ion-item class="col " ng-repeat="item in label track by $index">
+                        <a ui-sref="app.cityWide"><img class="item-thumbnail-full" ng-src="{{item.imgUrl}}"></a>
+                    </ion-item>
+                </div>
+            </ion-list>
+
+            <!-- 货郎限时抢 -->
+
+            <div class="time bor-top">
+                <div class="row">
+                    <div class="col">
+                        <div class="row time-name">
+                            <div class="col">
+                                <span>货郎限时抢</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- 商品 -->
+            <div class="goods bor-top">
+                <!-- 热卖专场 -->
+                <div class="hot-sell">
+                    <div class="goods-hot icons list">
+                        <div class="fl icons-img"><em class="fl">热卖专场</em></div>
+                        <i class="trigon fl"></i>
+                        <div class="fr more"><p>more</p>
+                            <i class="icon ion-ios-arrow-right"></i>
+                            <i class="icon ion-ios-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="goods-list">
+                        <div class="row">
+                            <div class="col col-50 list-left">
+                                <a href="">
+                                    <img ng-src="{{hotGoods.hotGoodsLeft.img}}">
+                                </a>
+                            </div>
+                            <div class="col col-50 list-right">
+                                
+                                <div ng-repeat="item in hotGoods.hotGoodsright track by $index"><a ui-sref="{{item.url}}"><img ng-src="{{item.img}}"></a></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 商品 -->
+                <div ng-repeat="item in goods track by $index" class="product{{$index}}">
+                    <!-- 广告图 -->
+                    <div class="advert bor-top bor-bot">
+                        <img ng-src="{{item.advert}}">
+                    </div>
+                    <!-- 商品推荐 -->
+                    <div class="recommend">
+                        <div class="recom-good icons list">
+                            <div class="fl icons-img"><em>{{item.name}}</em></div>
+                            <i class="trigon fl"></i>
+                            <div class="fr more"><p>more</p><i class="icon ion-ios-arrow-right"></i><i class="icon ion-ios-arrow-right"></i></div>
+                        </div>
+                        <div class="recom-list row list">
+                            <ul>
+                                <li class="col col-50" ng-repeat="product in item.product track by $index">
+                                    <a href="">
+                                        <div><img ng-src="{{product.imgUrl}}"></div>
+                                        <div class="list-name">
+                                            <p>{{product.name}}</p>
+                                            <p><span class="fl">￥{{product.price}}</span><em class="fr"></em></p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="height-but"></div>
+
+        </ion-content>
+
+        <app-footer></app-footer>
+
+    </div>
+
+
+</ion-view>

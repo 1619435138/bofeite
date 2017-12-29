@@ -1,0 +1,104 @@
+body, html {
+	margin: 0 auto;
+	height: 100%;
+    background: #F0F0F0;
+}
+
+.order-title {
+    display:flex;
+    width:100%;
+    font-family: '黑体';
+}
+.tab_default{ 
+    flex:1;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 8px;
+    color: #000;
+}
+.tab_select{
+    border-bottom: solid 3px #5fdec9;
+    color: #5FDEC9;
+    
+}
+.icon-left, .icon-right {
+    color: #fff;
+}
+
+.slider-slide, .slider {
+	height: 100% !important;
+}
+
+
+/*物流*/
+
+.logistics {
+    margin: 0 auto;
+    height: 100%;
+    background: #F0F0F0;
+}
+.logistics .time > span{
+    margin-top: 20px;
+    padding: 4px 10px;
+    background: #d6d6d6;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: #fff;
+}
+.logistics .time-list {
+    background: #fff;
+    margin: 0 5%;
+}
+.logistics .time-list h5 {
+    
+    padding-bottom: 7px;
+    white-space: initial;
+}
+.logistics .list-time .time {
+    text-align: center;
+}
+.logistics .time-list .item-thumbnail-left, .logistics .time-list .item-thumbnail-left .item-content{
+    padding-top: 20px;
+}
+.logistics .time-list .item {
+    border: none;
+}
+.logistics .time-list p {
+    padding: 4px 20px;
+    color: #ccc
+}
+.logistics .time-list p > span {
+    color: #11A8F7;
+}
+.logistics .time-list .number > p {
+    color: #5FDEC9;
+}
+.logistics .item-thumbnail-left>img:first-child {
+    max-width: 70px;
+    max-height: 70px;
+}
+
+/*通知*/
+.notice .time-list p {
+    color: #0e0e0e;
+}
+.notice .item-thumbnail-left>img:first-child {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+
+
+
+/*没有信息*/
+.empty-img {
+    width: 120px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.empty-txt h4 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}

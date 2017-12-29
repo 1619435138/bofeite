@@ -1,0 +1,54 @@
+<ion-view view-title="修改密码">
+	<div class="editpwd">
+		
+		<!-- 头部内容 -->
+	    <ion-header-bar class="bar bar-header header-bg ">
+	        <div class="item-icon-left icon-left">
+	            <i class="icon ion-ios-arrow-back" ng-click="loading()"></i>
+	        </div>
+	        <div class="h1 title">修改密码</div>
+	    </ion-header-bar>
+	    
+		<div class="scroll-content has-header bor-top">
+			<div class="editpwd-main">
+				<form>
+					<ion-list class="list">
+						
+						<label class="item item-input">
+							<i class="icon ion-ios-telephone"></i>
+							<input type="number" name="cellphone" placeholder="请输入账号/手机号码">
+						</label>
+
+						<label class="item item-input">
+							<i class="icon ion-ios-email"></i>
+							<input type="number" name="validate" placeholder="请输入验证码">
+							<span class="getEmail">获取验证码</span>
+						</label>
+
+						<label class="item item-input">
+							<i class="icon ion-ios-locked"></i>
+							<input type="password" name="password" placeholder="请输入密码">
+							<!-- ion-ios-eye 可看 -->
+							<i class="icon ion-ios-eye-outline icons-right"></i>
+						</label>
+
+						<label class="item item-input">
+							<i class="icon ion-ios-locked"></i>
+							<input type="password" name="confirmPassword" placeholder="请再次输入密码">
+							<!-- ion-ios-eye 可看 -->
+							<i class="icon ion-ios-eye-outline icons-right"></i>
+						</label>
+
+
+						<div class="editpwd-but">
+							<button class="button button-settlement button-block">确认修改</button>
+						</div>
+						
+					</ion-list>
+				</form>
+
+			</div>
+		</div>	
+
+	</div>
+</ion-view>
